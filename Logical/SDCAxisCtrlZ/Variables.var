@@ -1,0 +1,4 @@
+VAR
+	axis_Z : FB_Axis;
+	Regulator : FB_Regulator;
+END_VAR

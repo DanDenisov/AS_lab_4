@@ -1,0 +1,22 @@
+VAR_CONFIG
+	::PWM_Period AT %QW."X20MM4456".PeriodDurationPWM;
+	::SDCAxisCtr:axis_X.PWM AT %QW."X20MM4456".PulseWidthCurrentPWM01;
+	::SDCAxisCtr:axis_X.ResetError AT %QX."X20MM4456".ClearError01;
+	::SDCAxisCtr:axis_X.ResetCounter AT %QX."X20MM4456".ResetCounter01;
+	::SDCAxisCtr:axis_X.Counter AT %IW."X20MM4456".Counter01;
+	::SDCAxisCtr:axis_X.EndSwitchA AT %IX."X20MM4456".StatusInput03;
+	::SDCAxisCtr:axis_X.EndSwitchB AT %IX."X20MM4456".StatusInput04;
+	::SDCAxisCt1:axis_Y.PWM AT %QW."X20MM4456".PulseWidthCurrentPWM02;
+	::SDCAxisCt1:axis_Y.ResetError AT %QX."X20MM4456".ClearError02;
+	::SDCAxisCt1:axis_Y.ResetCounter AT %QX."X20MM4456".ResetCounter02;
+	::SDCAxisCt1:axis_Y.Counter AT %IW."X20MM4456".Counter02;
+	::SDCAxisCt1:axis_Y.EndSwitchA AT %IX."X20MM4456".StatusInput07;
+	::SDCAxisCt1:axis_Y.EndSwitchB AT %IX."X20MM4456".StatusInput08;
+	::SDCAxisCt2:axis_Z.PWM AT %QW."X20MM4456".PulseWidthCurrentPWM03;
+	::SDCAxisCt2:axis_Z.ResetCounter AT %QX."X20MM4456".ClearError03;
+	::SDCAxisCt2:axis_Z.ResetCounter AT %QX."X20MM4456".ResetCounter03;
+	::SDCAxisCt2:axis_Z.Counter AT %IW."X20MM4456".Counter03;
+	::SDCAxisCt2:axis_Z.EndSwitchA AT %IX."X20MM4456".StatusInput11;
+	::SDCAxisCt2:axis_Z.EndSwitchB AT %IX."X20MM4456".StatusInput12;
+	::CoilPWM AT %QW."X20MM4456".PulseWidthCurrentPWM04;
+END_VAR
