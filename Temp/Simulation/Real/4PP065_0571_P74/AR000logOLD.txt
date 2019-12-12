@@ -1,21 +1,21 @@
-Mon Dec 02 18:56:07 2019
+Tue Dec 10 19:03:37 2019
 COPYRIGHT (C) B&R Industrial Automation GmbH
 
-Mon Dec 02 18:56:07 2019
+Tue Dec 10 19:03:37 2019
 No ARsim registration found!
 
-Mon Dec 02 18:56:07 2019
-InstanceName: 01d5a929023504c0
+Tue Dec 10 19:03:37 2019
+InstanceName: 01d5af7361f8c1d0
 
-Mon Dec 02 18:56:07 2019
-WorkingDirectory: C:\projects\KRBO-02-16\Lab3\Temp\Simulation\Real\4PP065_0571_P74\
+Tue Dec 10 19:03:37 2019
+WorkingDirectory: C:\projects\KRBO-02-16\Lab4\Temp\Simulation\Real\4PP065_0571_P74\
 
-Mon Dec 02 18:56:07 2019
+Tue Dec 10 19:03:37 2019
 COMMAND_COLDSTART
 
-Mon Dec 02 18:56:09 2019
+Tue Dec 10 19:03:39 2019
 Version: D4.52
 
-Mon Dec 02 18:57:44 2019
+Tue Dec 10 19:16:05 2019
 COMMAND_TERMINATE
 

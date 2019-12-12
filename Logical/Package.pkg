@@ -13,7 +13,6 @@
     <Object Type="DataObject" Language="Vc" Description="320x240">GUI</Object>
     <Object Type="Package">GmcIpConfig</Object>
     <Object Type="Package">GmcIpUserConfig</Object>
-    <Object Type="DataObject" Language="Cns">CncInit</Object>
-    <Object Type="DataObject" Language="Cnc">CncProg</Object>
+    <Object Type="Package">CNC</Object>
   </Objects>
 </Package>

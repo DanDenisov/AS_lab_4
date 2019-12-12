@@ -9,9 +9,9 @@
       Source="SDCAxisCtrlX"
       Language="ANSIC">
       <File
-        Path="C:\Projects\Lab4\Logical\SDCAxisCtrlX\Types.typ" />
+        Path="C:\projects\KRBO-02-16\Lab4\Logical\SDCAxisCtrlX\Types.typ" />
       <File
-        Path="C:\Projects\Lab4\Logical\SDCAxisCtrlX\Variables.var" />
+        Path="C:\projects\KRBO-02-16\Lab4\Logical\SDCAxisCtrlX\Variables.var" />
     </Task>
     <Task
       Name="SDCAxisCt1"
@@ -19,9 +19,9 @@
       Source="SDCAxisCtrlY"
       Language="ANSIC">
       <File
-        Path="C:\Projects\Lab4\Logical\SDCAxisCtrlY\Types.typ" />
+        Path="C:\projects\KRBO-02-16\Lab4\Logical\SDCAxisCtrlY\Types.typ" />
       <File
-        Path="C:\Projects\Lab4\Logical\SDCAxisCtrlY\Variables.var" />
+        Path="C:\projects\KRBO-02-16\Lab4\Logical\SDCAxisCtrlY\Variables.var" />
     </Task>
     <Task
       Name="SDCAxisCt2"
@@ -29,9 +29,9 @@
       Source="SDCAxisCtrlZ"
       Language="ANSIC">
       <File
-        Path="C:\Projects\Lab4\Logical\SDCAxisCtrlZ\Types.typ" />
+        Path="C:\projects\KRBO-02-16\Lab4\Logical\SDCAxisCtrlZ\Types.typ" />
       <File
-        Path="C:\Projects\Lab4\Logical\SDCAxisCtrlZ\Variables.var" />
+        Path="C:\projects\KRBO-02-16\Lab4\Logical\SDCAxisCtrlZ\Variables.var" />
     </Task>
   </TaskClass>
   <TaskClass

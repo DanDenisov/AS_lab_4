@@ -12,7 +12,7 @@
   <Property Name="DefaultKeyLevelNumeric" Value="0"/>
   <Property Name="DefaultKeyLevelString" Value="0"/>
   <Property Name="DefaultLanguage" Value="en"/>
-  <Property Name="DefaultPage" Value="Source[local].Page[P2_HelpPage]"/>
+  <Property Name="DefaultPage" Value="Source[local].Page[P1_MainPage]"/>
   <Property Name="DefaultStyleSheet" Value="Source[local].StyleSheet[Color]"/>
   <Property Name="FocusControlDatapoint" Value="None"/>
   <Property Name="FontAntialiasing" Value="Off"/>
@@ -128,10 +128,10 @@
     <Source File="BitmapGroups\BypassState.bmgrp"/>
     <Source File="BitmapGroups\NavigationPad.bmgrp"/>
     <Source File="BitmapGroups\NumPad.bmgrp"/>
-    <Source File="Pages\P2_HelpPage.page"/>
-    <Source File="Pages\P1_InitPage.page"/>
-    <Source File="Pages\P3_ModePage.page"/>
-    <Source File="Pages\P4_PathPage.page"/>
+    <Source File="Pages\P1_MainPage.page"/>
+    <Source File="Pages\P2_AxisX.page"/>
+    <Source File="Pages\P3_AxisY.page"/>
+    <Source File="Pages\P4_AxisZ.page"/>
     <Source File="StyleSheets\Color.vcs"/>
     <Source File="StyleSheets\Gray.vcs"/>
     <Source File="Borders\Bump.bdr"/>

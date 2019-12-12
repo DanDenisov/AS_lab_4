@@ -39,8 +39,8 @@
     <NcDataObject Name="gmcipesm" Source="GmcIpConfig.gmcipesm.dob" Memory="UserROM" Language="Cnc" />
     <NcDataObject Name="gmcipmxd" Source="GmcIpConfig.gmcipmxd.dob" Memory="UserROM" Language="Cnc" />
     <NcDataObject Name="gmcipmx" Source="GmcIpConfig.gmcipmx.dob" Memory="UserROM" Language="Cnc" />
-    <NcDataObject Name="CncInit" Source="CncInit.dob" Memory="UserROM" Language="Cns" />
-    <NcDataObject Name="CncProg" Source="CncProg.dob" Memory="UserROM" Language="Cnc" />
+    <NcDataObject Name="CncInit" Source="CNC.CncInit.dob" Memory="UserROM" Language="Cns" />
+    <NcDataObject Name="CncProg" Source="CNC.CncProg.dob" Memory="UserROM" Language="Cnc" />
   </NcDataObjects>
   <VcDataObjects>
     <VcDataObject Name="GUI" Source="GUI.dob" Memory="UserROM" Language="Vc" WarningLevel="2" Compress="false" />

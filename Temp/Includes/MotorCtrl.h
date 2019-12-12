@@ -79,8 +79,8 @@ typedef struct FB_Axis
 	/* VAR_INPUT (digital) */
 	plcbit EndSwitchA;
 	plcbit EndSwitchB;
-	plcbit ForceSwitchA;
-	plcbit ForceSwitchB;
+	plcbit ForceNegSwitch;
+	plcbit ForcePosSwitch;
 	plcbit UserResetCounter;
 	/* VAR_OUTPUT (digital) */
 	plcbit ResetError;
