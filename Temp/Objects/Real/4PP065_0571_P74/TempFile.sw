@@ -18,8 +18,8 @@
   </DataObjects>
   <NcDataObjects>
     <NcDataObject Name="acp10etxen" Source="acp10etxen.dob" Memory="UserROM" Language="Ett" />
-    <NcDataObject Name="Axis_Xa" Source="AxisParameters.Axis_Xobj.Axis_Xa.dob" Memory="UserROM" Language="Apt" />
-    <NcDataObject Name="Axis_Xi" Source="AxisParameters.Axis_Xobj.Axis_Xi.dob" Memory="UserROM" Language="Ax" />
+    <NcDataObject Name="Axis_a" Source="AxisParameters.Axis_a.dob" Memory="UserROM" Language="Apt" />
+    <NcDataObject Name="Axis_Yi" Source="AxisParameters.Axis_Yobj.Axis_Yi.dob" Memory="UserROM" Language="Ax" />
     <NcDataObject Name="gmcipvar" Source="GmcIpUserConfig.gmcipvar.dob" Memory="UserROM" Language="Cnc" />
     <NcDataObject Name="gmcipfun" Source="GmcIpUserConfig.gmcipfun.dob" Memory="UserROM" Language="Cnc" />
     <NcDataObject Name="gmcipfub" Source="GmcIpUserConfig.gmcipfub.dob" Memory="UserROM" Language="Cnc" />
@@ -39,8 +39,10 @@
     <NcDataObject Name="gmcipesm" Source="GmcIpConfig.gmcipesm.dob" Memory="UserROM" Language="Cnc" />
     <NcDataObject Name="gmcipmxd" Source="GmcIpConfig.gmcipmxd.dob" Memory="UserROM" Language="Cnc" />
     <NcDataObject Name="gmcipmx" Source="GmcIpConfig.gmcipmx.dob" Memory="UserROM" Language="Cnc" />
-    <NcDataObject Name="CncInit" Source="CncInit.dob" Memory="UserROM" Language="Cns" />
-    <NcDataObject Name="CncProg" Source="CncProg.dob" Memory="UserROM" Language="Cnc" />
+    <NcDataObject Name="CncInit" Source="CNC.CncInit.dob" Memory="UserROM" Language="Cns" />
+    <NcDataObject Name="CncProg" Source="CNC.CncProg.dob" Memory="UserROM" Language="Cnc" />
+    <NcDataObject Name="Axis_Xi" Source="AxisParameters.Axis_Xobj.Axis_Xi.dob" Memory="UserROM" Language="Ax" />
+    <NcDataObject Name="Axis_Zi" Source="AxisParameters.Axis_Zobj.Axis_Zi.dob" Memory="UserROM" Language="Ax" />
   </NcDataObjects>
   <VcDataObjects>
     <VcDataObject Name="GUI" Source="GUI.dob" Memory="UserROM" Language="Vc" WarningLevel="2" Compress="false" />

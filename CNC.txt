@@ -1,0 +1,23 @@
+X:
+(AxisLength: 34 cm, 1350 units)
+(Translation: 1350 / 34 * 10 = 397.06 real-units)
+(DriveSpeed: 34 cm / 32 sec = 1.0625 cm/s = 42.1875 real-units/s)
+(AxisSpeed: 6500 virtual-units/s)
+(Hence, Translation [virtual-units] = AxisSpeed / DriveSpeed * Translation [real-units] = )
+( = 6500 / 42.1875 * 397.06 = 61176 virtual-units)
+
+Y:
+(AxisLength: 34 cm, 1700 units)
+(Translation: 1700 / 34 * 10 = 500 real-units)
+(DriveSpeed: 34 cm / 35 sec = 0.9714 cm/s = 48.5714 real-units/s)
+(AxisSpeed: 6500 virtual-units/s)
+(Hence, Translation [virtual-units] = AxisSpeed / DriveSpeed * Translation [real-units] = )
+( = 6500 / 48.5714 * 500 = 66911 virtual-units)
+
+Z:
+(AxisLength: 24 cm, 1150 units)
+(Translation: 1150 / 24 * 10 = 479.17 real-units)
+(DriveSpeed: 24 cm / 18.5 sec = 1.2973 cm/s = 62.1622 real-units/s)
+(AxisSpeed: 6500 virtual-units/s)
+(Hence, Translation [virtual-units] = AxisSpeed / DriveSpeed * Translation [real-units] = )
+( = 6500 / 62.1622 * 479.17 = 50104 virtual-units)

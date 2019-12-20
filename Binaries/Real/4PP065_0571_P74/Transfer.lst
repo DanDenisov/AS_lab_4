@@ -7,8 +7,6 @@
   <Operation Delete="SDCAxisCt1.br"/>
   <Operation Delete="SDCAxisCtr.br"/>
   <Operation Delete="GUI.br"/>
-  <Operation Delete="vcpfar00.br"/>
-  <Operation Delete="vcpdvnc.br"/>
   <Operation Delete="vctcal.br"/>
   <Operation Delete="vcpfpp30.br"/>
   <Operation Delete="vcbclass.br"/>
@@ -33,7 +31,6 @@
   <Operation Delete="GUI03.br"/>
   <Operation Delete="GUI02.br"/>
   <Operation Delete="GUI01.br"/>
-  <Operation Delete="vcnet.br"/>
   <Operation Delete="vcgclass.br"/>
   <Operation Delete="vcpfmtcx.br"/>
   <Operation Delete="Arnc0man.br"/>
@@ -80,15 +77,16 @@
   <Operation Download="Acp10sys.br" Memory="UserROM"/>
   <Operation Download="Arnc0sys.br" Memory="UserROM"/>
   <Operation Download="acp10etxen.br" Memory="UserROM"/>
-  <Operation Download="Axis_Xa.br" Memory="UserROM"/>
-  <Operation Download="Axis_Xi.br" Memory="UserROM"/>
+  <Operation Download="Axis_a.br" Memory="UserROM"/>
+  <Operation Download="Axis_Yi.br" Memory="UserROM"/>
   <Operation Download="CncInit.br" Memory="UserROM"/>
+  <Operation Download="Axis_Xi.br" Memory="UserROM"/>
+  <Operation Download="Axis_Zi.br" Memory="UserROM"/>
   <Operation Download="arnc0cfg.br" Memory="UserROM"/>
   <Operation Download="Arnc0map.br" Memory="UserROM"/>
   <Operation Restart="warm"/>
   <Operation Download="vcpfmtcx.br" Memory="UserROM"/>
   <Operation Download="vcgclass.br" Memory="UserROM"/>
-  <Operation Download="vcnet.br" Memory="UserROM"/>
   <Operation Download="GUI01.br" Memory="UserROM"/>
   <Operation Download="GUI02.br" Memory="UserROM"/>
   <Operation Download="GUI03.br" Memory="UserROM"/>
@@ -122,8 +120,6 @@
   <Operation Download="ashwac.br" Memory="UserROM"/>
   <Operation Download="iomap.br" Memory="UserROM"/>
   <Operation Download="AsBrStr.br" Memory="UserROM"/>
-  <Operation Download="vcpdvnc.br" Memory="UserROM"/>
-  <Operation Download="vcpfar00.br" Memory="UserROM"/>
   <Operation Download="gmcipvar.br" Memory="UserROM"/>
   <Operation Download="gmcipfun.br" Memory="UserROM"/>
   <Operation Download="gmcipfub.br" Memory="UserROM"/>

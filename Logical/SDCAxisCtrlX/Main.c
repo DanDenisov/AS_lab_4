@@ -24,11 +24,13 @@ void _INIT ProgramInit(void)
 	
 	Regulator.integrator.dt = 0.002;
 	Regulator.integrator.direct = 0;
-	Regulator.k_i = 0.16;
-	Regulator.k_p = 0.0001;
+	Regulator.k_i = 0.01;
+	Regulator.k_p = 0.001;
 	Regulator.max_abs_value = 24.0;
 	
 	axis_X.MaxSpeed = 6500;
+	
+	PWM_Period = 200;
 }
 
 void _CYCLIC ProgramCyclic(void)
@@ -42,10 +44,10 @@ void _CYCLIC ProgramCyclic(void)
 	Axis_X_DrvIf.iLifeCnt++;
 	
 	Axis_X_EncIf.iActTime = (INT)	AsIOTimeCyclicStart();
-	Axis_X_EncIf.iActPos = axis_X.Counter;
+	Axis_X_EncIf.iActPos = -axis_X.Counter;
 	
-	Axis_X_DiDoIf.iPosHwEnd = (axis_X.EndSwitchA || axis_X.ForceSwitchA);
-	Axis_X_DiDoIf.iNegHwEnd = (axis_X.EndSwitchB || axis_X.ForceSwitchB);
+	Axis_X_DiDoIf.iPosHwEnd = (axis_X.EndSwitchA || axis_X.ForcePosSwitch);
+	Axis_X_DiDoIf.iNegHwEnd = (axis_X.EndSwitchB || axis_X.ForceNegSwitch);
 	
 	CoilPWM = CoilPowered ? 32767 : 0;
 	

@@ -53,8 +53,8 @@ FUNCTION_BLOCK FB_Axis
 		UserSpeed : INT;
 		EndSwitchA : BOOL;
 		EndSwitchB : BOOL;
-		ForceSwitchA : BOOL;
-		ForceSwitchB : BOOL;
+		ForceNegSwitch : BOOL;
+		ForcePosSwitch : BOOL;
 		Counter : INT;
 		UserResetCounter : BOOL;
 	END_VAR

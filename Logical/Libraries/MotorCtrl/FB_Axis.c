@@ -26,7 +26,6 @@ void FB_Axis(struct FB_Axis* inst)
 	if (inst->EndSwitchA || inst->EndSwitchB)
 	{
 		inst->ResetError = 1;
-		inst->PWM = 0;
 	}
 }
 

@@ -2,6 +2,9 @@
 <?AutomationStudio Version=4.5.2.102?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="Package" Description="Axis_Xobj">Axis_Xobj</Object>
+    <Object Type="DataObject" Language="Apt">Axis_a</Object>
+    <Object Type="Package">Axis_Xobj</Object>
+    <Object Type="Package">Axis_Yobj</Object>
+    <Object Type="Package">Axis_Zobj</Object>
   </Objects>
 </Package>

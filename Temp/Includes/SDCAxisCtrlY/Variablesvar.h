@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1575573446_3_
-#define _BUR_1575573446_3_
+#ifndef _BUR_1576510640_6_
+#define _BUR_1576510640_6_
 
 #include <bur/plctypes.h>
 
@@ -31,5 +31,5 @@ __asm__(".ascii \"iecfile \\\"Logical/Libraries/MotorCtrl/MotorCtrl.fun\\\" scop
 __asm__(".previous");
 
 
-#endif /* _BUR_1575573446_3_ */
+#endif /* _BUR_1576510640_6_ */
 

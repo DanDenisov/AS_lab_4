@@ -57,7 +57,7 @@ LIB_LOCAL_OBJ_GUI=$(TEMP_PATH_GUI)/localobj.vca
 # Hardware sources
 PANEL_HW_OBJECT_GUI=$(TEMP_PATH_ROOT_GUI)/Objects/$(AS_CONFIGURATION)/$(AS_TEMP_PLC)/GUI/dis.Hardware.vco
 PANEL_HW_VCI_GUI=$(TEMP_PATH_ROOT_GUI)/Objects/$(AS_CONFIGURATION)/$(AS_TEMP_PLC)/GUI/dis.Hardware.vci
-PANEL_HW_SOURCE_GUI=C:/Projects/Lab4/Physical/Real/Hardware.hw 
+PANEL_HW_SOURCE_GUI=C:/projects/KRBO-02-16/Denisov/Lab4/Physical/Real/Hardware.hw 
 DIS_OBJECTS_GUI=$(PANEL_HW_OBJECT_GUI) $(KEYMAP_OBJECTS_GUI)
 
 # KeyMapping flags
@@ -156,10 +156,10 @@ BMGRP_SOURCES_GUI=$(AS_PROJECT_PATH)/Logical/GUI/BitmapGroups/AcknowledgeState.b
 	$(AS_PROJECT_PATH)/Logical/GUI/BitmapGroups/NavigationPad.bmgrp \
 	$(AS_PROJECT_PATH)/Logical/GUI/BitmapGroups/NumPad.bmgrp 
 
-PAGE_SOURCES_GUI=$(AS_PROJECT_PATH)/Logical/GUI/Pages/P2_HelpPage.page \
-	$(AS_PROJECT_PATH)/Logical/GUI/Pages/P1_InitPage.page \
-	$(AS_PROJECT_PATH)/Logical/GUI/Pages/P3_ModePage.page \
-	$(AS_PROJECT_PATH)/Logical/GUI/Pages/P4_PathPage.page 
+PAGE_SOURCES_GUI=$(AS_PROJECT_PATH)/Logical/GUI/Pages/P1_MainPage.page \
+	$(AS_PROJECT_PATH)/Logical/GUI/Pages/P2_AxisX.page \
+	$(AS_PROJECT_PATH)/Logical/GUI/Pages/P3_AxisY.page \
+	$(AS_PROJECT_PATH)/Logical/GUI/Pages/P4_AxisZ.page 
 
 VCS_SOURCES_GUI=$(AS_PROJECT_PATH)/Logical/GUI/StyleSheets/Color.vcs \
 	$(AS_PROJECT_PATH)/Logical/GUI/StyleSheets/Gray.vcs 
@@ -228,19 +228,19 @@ $(PANEL_HW_OBJECT_GUI): $(PANEL_HW_VCI_GUI) $(PALFILE_GUI) $(VC_LIBRARY_LIST_GUI
 # Pages
 PAGE_OBJECTS_GUI = $(addprefix $(TEMP_PATH_GUI)/page., $(notdir $(PAGE_SOURCES_GUI:.page=.vco)))
 
-$(TEMP_PATH_GUI)/page.P2_HelpPage.vco: $(AS_PROJECT_PATH)/Logical/GUI/Pages/P2_HelpPage.page $(VC_LANGUAGES_GUI)
+$(TEMP_PATH_GUI)/page.P1_MainPage.vco: $(AS_PROJECT_PATH)/Logical/GUI/Pages/P1_MainPage.page $(VC_LANGUAGES_GUI)
 	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -P '$(AS_PROJECT_PATH)' -ds '$(SRC_PATH_GUI)/StyleSheets/Color.vcs' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
 
 
-$(TEMP_PATH_GUI)/page.P1_InitPage.vco: $(AS_PROJECT_PATH)/Logical/GUI/Pages/P1_InitPage.page $(VC_LANGUAGES_GUI)
+$(TEMP_PATH_GUI)/page.P2_AxisX.vco: $(AS_PROJECT_PATH)/Logical/GUI/Pages/P2_AxisX.page $(VC_LANGUAGES_GUI)
 	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -P '$(AS_PROJECT_PATH)' -ds '$(SRC_PATH_GUI)/StyleSheets/Color.vcs' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
 
 
-$(TEMP_PATH_GUI)/page.P3_ModePage.vco: $(AS_PROJECT_PATH)/Logical/GUI/Pages/P3_ModePage.page $(VC_LANGUAGES_GUI)
+$(TEMP_PATH_GUI)/page.P3_AxisY.vco: $(AS_PROJECT_PATH)/Logical/GUI/Pages/P3_AxisY.page $(VC_LANGUAGES_GUI)
 	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -P '$(AS_PROJECT_PATH)' -ds '$(SRC_PATH_GUI)/StyleSheets/Color.vcs' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
 
 
-$(TEMP_PATH_GUI)/page.P4_PathPage.vco: $(AS_PROJECT_PATH)/Logical/GUI/Pages/P4_PathPage.page $(VC_LANGUAGES_GUI)
+$(TEMP_PATH_GUI)/page.P4_AxisZ.vco: $(AS_PROJECT_PATH)/Logical/GUI/Pages/P4_AxisZ.page $(VC_LANGUAGES_GUI)
 	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -P '$(AS_PROJECT_PATH)' -ds '$(SRC_PATH_GUI)/StyleSheets/Color.vcs' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
 
 
@@ -282,27 +282,27 @@ $(VCVK_OBJECTS_GUI): $(VC_LANGUAGES_GUI)
 TPR_OBJECTS_GUI = $(addprefix $(TEMP_PATH_GUI)/tpr., $(notdir $(TPR_SOURCES_GUI:.tpr=.vco)))
 
 $(TEMP_PATH_GUI)/tpr.AlphaPadQVGA.vco: $(AS_PROJECT_PATH)/Logical/GUI/TouchPads/AlphaPadQVGA.tpr
-	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -prj 'C:/Projects/Lab4/Logical/GUI' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -prj 'C:/projects/KRBO-02-16/Denisov/Lab4/Logical/GUI' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
 
 
 $(TEMP_PATH_GUI)/tpr.AlphaPad.vco: $(AS_PROJECT_PATH)/Logical/GUI/TouchPads/AlphaPad.tpr
-	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -prj 'C:/Projects/Lab4/Logical/GUI' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -prj 'C:/projects/KRBO-02-16/Denisov/Lab4/Logical/GUI' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
 
 
 $(TEMP_PATH_GUI)/tpr.EditPad.vco: $(AS_PROJECT_PATH)/Logical/GUI/TouchPads/EditPad.tpr
-	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -prj 'C:/Projects/Lab4/Logical/GUI' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -prj 'C:/projects/KRBO-02-16/Denisov/Lab4/Logical/GUI' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
 
 
 $(TEMP_PATH_GUI)/tpr.NavigationPad_hor.vco: $(AS_PROJECT_PATH)/Logical/GUI/TouchPads/NavigationPad_hor.tpr
-	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -prj 'C:/Projects/Lab4/Logical/GUI' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -prj 'C:/projects/KRBO-02-16/Denisov/Lab4/Logical/GUI' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
 
 
 $(TEMP_PATH_GUI)/tpr.NavigationPad_ver.vco: $(AS_PROJECT_PATH)/Logical/GUI/TouchPads/NavigationPad_ver.tpr
-	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -prj 'C:/Projects/Lab4/Logical/GUI' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -prj 'C:/projects/KRBO-02-16/Denisov/Lab4/Logical/GUI' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
 
 
 $(TEMP_PATH_GUI)/tpr.NumPad.vco: $(AS_PROJECT_PATH)/Logical/GUI/TouchPads/NumPad.tpr
-	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -prj 'C:/Projects/Lab4/Logical/GUI' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -prj 'C:/projects/KRBO-02-16/Denisov/Lab4/Logical/GUI' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
 
 
 #Touch Pads END
